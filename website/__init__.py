@@ -18,21 +18,25 @@ def create_app():
     app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{os.getenv("DB_NAME")}'
     db.init_app(app)
-    openai.api_key= os.getenv("OPENAI_API_KEY")
-    openai.api_version
-
-    completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", 
-        messages=[{"role": "user", "content": "Write me a 50 words essay about ChatGPT 3.5 Turbo greeting the customer"}]
-        )
-
-    print(completion)
     
+    
+    # openai.api_key = os.getenv("OPENAI_API_KEY")
+    # openai.api_version
+
+    # completion = openai.ChatCompletion.create(
+    #     model="gpt-3.5-turbo", 
+    #     messages=[{"role": "user", "content": "Hello!"}]
+    #     )
+
+    # print(completion)
+    
+    
+    # TO RETRIEVE DATA => str(completion.choices[0].message.content)
     
     @app.route('/')
     def halo():
-        # return "<h1><a href=" + "/hello" + ">say hello</a></h1>"
-        return "<h1>" + completion + "</h1>"
+        return "<h1><a href=" + "/hello" + ">say hello</a></h1>"
+        # return "<h1>" + str(completion.choices[0].message.content) + "</h1>"
         
         
     @app.route('/hello')
