@@ -12,6 +12,8 @@ That's my repo for the Advanced Web Tech module!
 6. Docker x Docker-compose
 
 ## To start the production server and view it
+`type "pip3 install -r requirement.txt"`
+
 `type "python3 server.py"`
 
 `and use the "https://127.0.0.1:5000" to access it`
