@@ -7,7 +7,7 @@ That's my repo for the Advanced Web Tech module!
 1. Python Flask, Jinja Templates, SQLalchemy, Dotenv
 2. MySQL
 3. Html
-4. CSS
+4. CSS Bootstrap
 5. OpenAI ChatGPT 3.5 Turbo API
 6. Docker x Docker-compose
 
