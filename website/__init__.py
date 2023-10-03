@@ -6,7 +6,7 @@ from flask_login import LoginManager
 import openai
 
 db = SQLAlchemy()  # Initializing database
-
+DB_NAME = "database.db"
 
 def create_app():
     load_dotenv()  # Loading .env variables
