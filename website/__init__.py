@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 from flask_login import LoginManager
 import openai
+import requests
 
 db = SQLAlchemy()  # Initializing database
 DB_NAME = "database.db"
