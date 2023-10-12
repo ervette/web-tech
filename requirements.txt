@@ -5,3 +5,4 @@ Werkzeug==2.3.7
 python-dotenv
 openai
 requests
+json
