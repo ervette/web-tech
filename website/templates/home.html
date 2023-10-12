@@ -1,43 +1,39 @@
-{% extends "base.html" %}
-
-{% block title %} Home {% endblock %}
-
-{% block content %}
-    <h1>Backlog</h1>
-    <div class="container">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Description</th>
-                    <th>Task</th>
-                    <th>Description</th>
-                    <th>Estimated</th>
-                    <th>Assignee</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for item in data %}
-                    <tr>
-                        <td>{{ item.Backlog }}</td>
-                        <td>{{ item.Description }}</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    {% for task in item.Tasks %}
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td>{{ task.Task }}</td>
-                            <td>{{ task.Description }}</td>
-                            <td>{{ task.Estimated }}</td>
-                            <td>{{ task.Assignee }}</td>
-                        </tr>
-                    {% endfor %}
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block content
+%}
+<h1>Backlog</h1>
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Description</th>
+        <th>Task</th>
+        <th>Description</th>
+        <th>Estimated</th>
+        <th>Assignee</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+      <tr>
+        <td>{{ item.Backlog }}</td>
+        <td>{{ item.Description }}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      {% for task in item.Tasks %}
+      <tr>
+        <td></td>
+        <td></td>
+        <td>{{ task.Task }}</td>
+        <td>{{ task.Description }}</td>
+        <td>{{ task.Estimated }}</td>
+        <td>{{ task.Assignee }}</td>
+      </tr>
+      {% endfor %} {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock content %}
