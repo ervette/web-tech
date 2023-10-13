@@ -1,10 +1,11 @@
-h1{
-    padding-top: 15px;
-    text-align: center;
+h1 {
+  padding-top: 15px;
+  text-align: center;
 }
-div .container{
-    padding-top: 20px;
+div .container {
+  padding-top: 20px;
 }
+
 
 /* reminder!!! if you want to alter class of smth write
     html "data structure" first thereafter .{name of class}

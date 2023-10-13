@@ -9,3 +9,8 @@ def home():
     with open('website/kanban.json', 'r') as file:
         data = json.load(file)
     return render_template("home.html", data=data)
+
+
+@views.route('/progress')
+def progress():
+    return render_template("progress.html", percentage = 41)
