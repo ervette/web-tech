@@ -12,7 +12,11 @@ That's my repo for the Advanced Web Tech module!
 6. Docker x Docker-compose
 
 ## To start the application server and view it
+
 `make sure you have installed docker`
+
 `type "docker build -t flask-app ."`
+
 `type "docker run --name my-app -p 8000:8000 flask-app"`
+
 `Access the app on http://127.0.0.1:8000 or http://172.17.0.2:8000`
