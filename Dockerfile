@@ -1,8 +1,10 @@
-FROM python:3.11.5
+FROM python:latest
 
 WORKDIR /flask-app
 
 COPY ./requirements.txt .
+
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 COPY . .
