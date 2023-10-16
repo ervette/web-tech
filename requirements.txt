@@ -1,7 +1,7 @@
-Flask==2.3.3
-flask-sqlalchemy==3.1.1
-Flask-Login==0.6.2
-Werkzeug==2.3.7
+Flask
+flask-sqlalchemy
+Flask-Login
+Werkzeug
 python-dotenv
 openai
 requests
