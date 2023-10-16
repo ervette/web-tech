@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %} Progress {% endblock %} {% block
+content %}
+<div class="progress" style="margin-top: 20px;">
+  <div
+    class="progress-bar progress-bar-success"
+    role="progressbar"
+    aria-valuenow="{{percentage}}"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    style="width: {{percentage}}%"
+  ></div>
+</div>
+{% endblock %}
+
+<!-- the error doesn't matter since it works c: -->
+<!-- USE THE MARGIN INSTEAD OF PADDING-TOP!!! -->
