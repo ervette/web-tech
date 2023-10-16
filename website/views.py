@@ -13,4 +13,8 @@ def home():
 
 @views.route('/progress')
 def progress():
+<<<<<<< HEAD
     return render_template("progress.html", percentage = 31.99999)
+=======
+    return render_template("progress.html", percentage = 41)
+>>>>>>> 21e9e79ce20bade5b79b6399cec4939dc468c312
