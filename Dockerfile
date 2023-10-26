@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM amd64/ubuntu
 
 RUN apt-get update -y
 RUN apt-get install -y pip python3-dev build-essential libssl-dev libffi-dev libxml2 libxslt1-dev zlib1g-dev
