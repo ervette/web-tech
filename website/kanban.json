@@ -1,284 +1,64 @@
-[
-      {
-        "Backlog": 1,
-        "Description": "User Authentication",
-        "Tasks": [
-          {
-            "Task": "Create user login page",
-            "Description": "Design and implement the user login page",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Implement user registration",
-            "Description": "Implement user registration functionality",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Add password reset functionality",
-            "Description": "Implement password reset functionality",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 2,
-        "Description": "Task Management",
-        "Tasks": [
-          {
-            "Task": "Create a dashboard for displaying tasks",
-            "Description": "Design and create a dashboard for displaying tasks",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Add the ability to create new tasks",
-            "Description": "Implement the ability to create new tasks",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Implement task editing and deletion",
-            "Description": "Implement task editing and deletion functionality",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Prioritize tasks with a drag-and-drop interface",
-            "Description": "Implement task prioritization with drag-and-drop interface",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 3,
-        "Description": "User Profile",
-        "Tasks": [
-          {
-            "Task": "Create user profile page",
-            "Description": "Design and create the user profile page",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Allow users to update their profile information",
-            "Description": "Implement the ability for users to update their profile",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 4,
-        "Description": "Notifications",
-        "Tasks": [
-          {
-            "Task": "Implement email notifications for task updates",
-            "Description": "Implement email notifications for task updates",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          },
-          {
-            "Task": "Add in-app notifications for task assignments",
-            "Description": "Implement in-app notifications for task assignments",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 5,
-        "Description": "Mobile Responsiveness",
-        "Tasks": [
-          {
-            "Task": "Ensure the application is mobile-friendly",
-            "Description": "Optimize the application for mobile devices",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          },
-          {
-            "Task": "Test on various mobile devices and browsers",
-            "Description": "Perform testing on mobile devices and different browsers",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 6,
-        "Description": "Search Functionality",
-        "Tasks": [
-          {
-            "Task": "Add a search bar for finding tasks",
-            "Description": "Implement a search bar for task search",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Implement search filters and sorting options",
-            "Description": "Implement search filters and sorting options",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 7,
-        "Description": "Reporting",
-        "Tasks": [
-          {
-            "Task": "Generate basic task reports",
-            "Description": "Generate basic task reports",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          },
-          {
-            "Task": "Create a printable task summary",
-            "Description": "Create a printable task summary",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 8,
-        "Description": "Security",
-        "Tasks": [
-          {
-            "Task": "Implement user access controls",
-            "Description": "Implement user access control features",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          },
-          {
-            "Task": "Perform security audits and testing",
-            "Description": "Perform security audits and testing",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 9,
-        "Description": "Performance Optimization",
-        "Tasks": [
-          {
-            "Task": "Optimize database queries",
-            "Description": "Optimize database queries for improved performance",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Minimize page load times",
-            "Description": "Minimize page load times for better performance",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 10,
-        "Description": "Documentation",
-        "Tasks": [
-          {
-            "Task": "Create user documentation",
-            "Description": "Create user documentation",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Document the codebase for developers",
-            "Description": "Document the codebase for developers",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 11,
-        "Description": "Testing",
-        "Tasks": [
-          {
-            "Task": "Write unit tests for critical components",
-            "Description": "Write unit tests for critical components",
-            "Estimated": 8,
-            "Assignee": "qwerty"
-          },
-          {
-            "Task": "Perform manual testing on the entire system",
-            "Description": "Perform manual testing on the entire system",
-            "Estimated": 8,
-            "Assignee": "qwerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 12,
-        "Description": "Deployment",
-        "Tasks": [
-          {
-            "Task": "Prepare for production deployment",
-            "Description": "Prepare for production deployment",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          },
-          {
-            "Task": "Deploy the application to a production server",
-            "Description": "Deploy the application to a production server",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 13,
-        "Description": "User Feedback",
-        "Tasks": [
-          {
-            "Task": "Collect user feedback on the beta version",
-            "Description": "Collect user feedback on the beta version",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          },
-          {
-            "Task": "Address user-reported issues and feature requests",
-            "Description": "Address user-reported issues and feature requests",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      },
-      {
-        "Backlog": 14,
-        "Description": "Marketing and Promotion",
-        "Tasks": [
-          {
-            "Task": "Develop a marketing strategy",
-            "Description": "Develop a marketing strategy",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          },
-          {
-            "Task": "Create promotional materials",
-            "Description": "Create promotional materials",
-            "Estimated": 2,
-            "Assignee": "azerty"
-          }
-        ]
-      },
-      {
-        "Backlog": 15,
-        "Description": "Future Enhancements (Ideas)",
-        "Tasks": [
-          {
-            "Task": "Brainstorm and list potential future features and improvements",
-            "Description": "Brainstorm and list potential future features and improvements",
-            "Estimated": 4,
-            "Assignee": "ervette"
-          }
-        ]
-      }
-    ]
+{
+  "tasks": [
+    {
+      "Task": "User Authentication and Authorization",
+      "Description": "1. Implement user authentication system. 2. Set up user roles and permissions. 3. Ensure secure login and data protection.",
+      "Assignee": "Team Member 1",
+      "Estimated-time-consumption": "20 hours"
+    },
+    {
+      "Task": "Dashboard Development",
+      "Description": "1. Design user interface for the dashboard. 2. Implement interactive elements. 3. Integrate data visualization tools.",
+      "Assignee": "Team Member 2",
+      "Estimated-time-consumption": "18 hours"
+    },
+    {
+      "Task": "Product Catalog",
+      "Description": "1. Create a database for products. 2. Develop product listing and categorization features. 3. Implement search and filtering options.",
+      "Assignee": "Team Member 3",
+      "Estimated-time-consumption": "22 hours"
+    },
+    {
+      "Task": "Shopping Cart Functionality",
+      "Description": "1. Build a cart system for users. 2. Allow addition, removal, and quantity adjustment of items. 3. Ensure cart persistence.",
+      "Assignee": "Team Member 1",
+      "Estimated-time-consumption": "16 hours"
+    },
+    {
+      "Task": "Checkout and Payment Integration",
+      "Description": "1. Implement checkout process. 2. Integrate payment gateways securely. 3. Ensure transaction completion and order confirmation.",
+      "Assignee": "Team Member 2",
+      "Estimated-time-consumption": "24 hours"
+    },
+    {
+      "Task": "Admin Panel",
+      "Description": "1. Develop an admin interface. 2. Provide tools for managing users, products, and orders. 3. Ensure admin role-based access.",
+      "Assignee": "Team Member 3",
+      "Estimated-time-consumption": "26 hours"
+    },
+    {
+      "Task": "User Profile and Order History",
+      "Description": "1. Create user profile pages. 2. Display order history and details. 3. Allow profile customization options.",
+      "Assignee": "Team Member 1",
+      "Estimated-time-consumption": "18 hours"
+    },
+    {
+      "Task": "Email Notifications",
+      "Description": "1. Set up email notification system. 2. Implement triggers for order updates and account-related notifications.",
+      "Assignee": "Team Member 2",
+      "Estimated-time-consumption": "14 hours"
+    },
+    {
+      "Task": "Security Enhancements",
+      "Description": "1. Conduct security audit. 2. Implement additional security measures. 3. Ensure protection against common threats.",
+      "Assignee": "Team Member 3",
+      "Estimated-time-consumption": "30 hours"
+    },
+    {
+      "Task": "Performance Optimization and Testing",
+      "Description": "1. Analyze and optimize code for performance. 2. Conduct thorough testing across different scenarios and devices.",
+      "Assignee": "Team Member 1",
+      "Estimated-time-consumption": "28 hours"
+    }
+  ]
+}

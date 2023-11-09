@@ -6,36 +6,25 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>No</th>
-        <th>Description</th>
         <th>Task</th>
         <th>Description</th>
-        <th>Estimated</th>
         <th>Assignee</th>
+        <th>Estimated time consumption</th>
         <th>Status</th>
       </tr>
     </thead>
     <tbody>
       {% for item in data %}
-      <tr>
-        <td>{{ item.Backlog }}</td>
-        <td>{{ item.Description }}</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      {% for task in item.Tasks %}
-      <tr>
-        <td></td>
-        <td></td>
-        <td>{{ task.Task }}</td>
-        <td>{{ task.Description }}</td>
-        <td>{{ task.Estimated }}</td>
-        <td>{{ task.Assignee }}</td>
-        <td><input type="checkbox" /></td>
-      </tr>
-      {% endfor %} {% endfor %}
+      {% for task in data['tasks'] %}
+            <tr>
+                <td>{{ task['Task'] }}</td>
+                <td>{{ task['Description'] }}</td>
+                <td>{{ task['Assignee'] }}</td>
+                <td>{{ task['Estimated-time-consumption'] }}</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            {% endfor %} 
+            {% endfor %}
     </tbody>
   </table>
 </div>

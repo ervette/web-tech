@@ -6,3 +6,4 @@ Werkzeug==2.3.7
 aiohttp==3.7.4
 openai
 requests
+Jinja2
