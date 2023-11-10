@@ -2,10 +2,38 @@
 %}
 
 <h1>Kanban board</h1>
+<div class="container mt-4">
+  <h2>Import backlog.txt file</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <div class="input-group mb-3">
+      <div class="custom-file">
+        <input
+          type="file"
+          class="custom-file-input"
+          id="fileInput"
+          name="file"
+        />
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Upload</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  document
+    .querySelector(".custom-file-input")
+    .addEventListener("change", function (e) {
+      var fileName = document.getElementById("fileInput").files[0].name;
+      var nextSibling = e.target.nextElementSibling;
+      nextSibling.innerText = fileName;
+    });
+</script>
 <div class="container">
   <table class="table table-bordered">
     <thead>
       <tr>
+        <th>No</th>
         <th>Task</th>
         <th>Description</th>
         <th>Assignee</th>
@@ -14,18 +42,42 @@
       </tr>
     </thead>
     <tbody>
-      {% for item in data %}
-      {% for task in data['tasks'] %}
-            <tr>
-                <td>{{ task['Task'] }}</td>
-                <td>{{ task['Description'] }}</td>
-                <td>{{ task['Assignee'] }}</td>
-                <td>{{ task['Estimated-time-consumption'] }}</td>
-                <td><input type="checkbox"></td>
-            </tr>
-            {% endfor %} 
-            {% endfor %}
+      {% for task in data %}
+      <tr>
+        <td>{{ task.id }}</td>
+        <td>{{ task.task }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.user_id }}</td>
+        <td>{{ task.time_consumption }}</td>
+        <td>
+          <input type="checkbox" {% if task.status == 1 %} checked {% endif %}
+          data-task-id="{{ task.id }}" onchange="updateTaskStatus(this)">
+        </td>
+      </tr>
+      {% endfor %}
     </tbody>
   </table>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    function updateTaskStatus(checkbox) {
+      var taskId = checkbox.getAttribute("data-task-id");
+      var isChecked = checkbox.checked ? 1 : 0;
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/update_task_status", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          // Success: Parse the JSON response and handle the flash message
+          var response = JSON.parse(xhr.responseText);
+          window.location.href = "/";
+        } else {
+          // Failure: Handle the error (you may want to display an error message)
+          alert("Something went wrong. Try again.");
+        }
+      };
+      xhr.send("task_id=" + taskId + "&status=" + isChecked);
+    }
+  </script>
 </div>
 {% endblock content %}

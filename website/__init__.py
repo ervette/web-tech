@@ -60,6 +60,6 @@ def create_app():
 
 
 def create_database():
-    if not os.path.exists('website/' + os.getenv("DB_NAME")):
+    if not os.path.exists('instance/' + os.getenv("DB_NAME")):
         db.create_all()
         print('Database is initialized')

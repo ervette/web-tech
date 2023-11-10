@@ -1,6 +1,18 @@
 {% extends "base.html" %} {% block title %} Progress {% endblock %} {% block
 content %}
-<div class="progress" style="margin-top: 20px;">
+<style>
+  .img-container {
+    text-align: center;
+  }
+
+  .img-rounded {
+    margin-top: 5%;
+    margin-left: 40%;
+    width: 20%;
+    height: auto;
+  }
+</style>
+<div class="progress" style="margin-top: 20px">
   <div
     class="progress-bar progress-bar-info"
     role="progressbar"
@@ -10,6 +22,15 @@ content %}
     style="width: {{percentage}}%"
   ></div>
 </div>
+
+<div class="image-container">
+  <img
+  src="{{ url_for('static', filename='pics/' + closest_percentage + '.png') }}"
+  class="img-rounded"
+  />
+  <h1>You're doing great!</h1>
+</div>
+
 {% endblock %}
 
 <!-- the error doesn't matter since it works c: -->

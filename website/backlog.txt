@@ -1,0 +1,6 @@
+1. Designing the Diagram for flask web-application
+2. Creating the initial design for the app
+3. Gathering users feedback 
+4. Automatizing the website
+5. Setting up the VCS and CI/CD
+6. Deploying the website to heroku
