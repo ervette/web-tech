@@ -20,7 +20,7 @@ EXPOSE 8000
 ENV FLASK_APP=app.py
 
 # Use the official fl0 runtime as the base image
-FROM fl0w/runtime:latest
+FROM fl0/runtime:latest
 
 # Copy application code and dependencies from the first image
 COPY --from=0 /flask-app /flask-app
