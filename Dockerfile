@@ -1,16 +1,12 @@
-FROM ubuntu:latest
+FROM python:latest
 
-RUN apt-get update && \
-    apt-get install -y python3 python3-pip
-    
 WORKDIR /flask-app
-VOLUME /flask-app
 
-COPY . .
+COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
 
+COPY . .
 EXPOSE 8000
 ENV FLASK_APP=app.py
-
 CMD [ "python", "app.py"]
