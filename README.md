@@ -2,21 +2,34 @@
 That's my repo for the Advanced Web Tech module!
 
 
-## I'm going to use current tech stack (for now): 
+## Tech stack: 
 
-1. Python Flask, Jinja Templates, SQLalchemy, Dotenv
-2. MySQL
-3. Html
+1. Python Flask
+2. SQAlchemy SQLite
+3. Html templating with Jinja
 4. CSS Bootstrap
 5. OpenAI ChatGPT 3.5 Turbo API
 6. Docker x Docker-compose
+7. Gunicorn
+8. Aiohttp + Werkzeug security
+9. Caddy
 
-## To start the application server and view it
+## To start the application server
 
-`make sure you have installed docker`
+`git clone https://github.com/ervette/web-tech.git`
 
-`type "docker build -t flask-app ."`
+`cd web-tech`
 
-`type "docker run --name my-app -p 8000:8000 flask-app"`
+`pip install -r requirements.txt`
 
-`Access the app on http://127.0.0.1:8000 or http://172.17.0.2:8000`
+`apt-get install caddy ` for Linux
+
+`brew install caddy` for MacOS
+
+`Follow the official site for windows installation` for Windows
+
+`caddy start ./Caddyfile`
+
+`gunicorn --timeout 600 main:app` 
+
+`Go to https://webtech-2324-56.napier.ac.uk/ to access the app`
