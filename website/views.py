@@ -3,11 +3,11 @@ import json
 from werkzeug.utils import secure_filename
 import os
 from flask_login import login_required, logout_user, current_user
-import openai
 from openai import OpenAI
 from . import db
 from .models import User, Kanban
 from sqlalchemy import Table, select
+from dotenv import load_dotenv
 client = OpenAI()
 
 views = Blueprint('views', __name__)
@@ -25,6 +25,7 @@ def home():
 
 @views.route('/upload', methods=['GET', 'POST'])
 def upload_file():
+    load_dotenv()
     all_users = User.query.all()
     users_as_string = ' '.join(user.name for user in all_users)
 
@@ -42,8 +43,7 @@ def upload_file():
         Kanban.query.delete()
 
         # Process the string as needed in your application
-        OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        openai.api_version
+        OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
         completion = client.chat.completions.create(model="gpt-3.5-turbo",
                                                     messages=[{"role": "user",
@@ -81,7 +81,7 @@ def upload_file():
         db.session.commit()
 
     return redirect(url_for('views.home'))
-        # return f'File successfully uploaded and parsed! : {info}', 200
+       # return f'File successfully uploaded and parsed! : {info}', 200
 
 
 @views.route('/update_task_status', methods=['POST'])
