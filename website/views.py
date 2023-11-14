@@ -80,7 +80,7 @@ def upload_file():
 
         db.session.commit()
 
-        return redirect(url_for('views.home'))
+    return redirect(url_for('views.home'))
         # return f'File successfully uploaded and parsed! : {info}', 200
 
 
